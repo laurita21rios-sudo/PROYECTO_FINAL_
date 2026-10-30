@@ -53,6 +53,14 @@ La arquitectura del proyecto sigue el estándar de reproducibilidad científica:
 ```text
 PROYECTO_FINAL/
 │
+├── notebooks/                           # Entornos de experimentación y entrenamiento
+│   ├── CNN.ipynb                        # CNN personalizada con interpretabilidad Grad-CAM
+│   ├── ConvNeXt_Tiny_Clinical.ipynb     # Calibración clínica y optimización de umbral (FN=0)
+│   ├── ResNet50.ipynb                   # Fine-Tuning en 2 fases
+│   ├── EfficientNetB0.ipynb             # Modelos Baseline y análisis de atención CBAM
+│   ├── VGG16.ipynb                      # Transfer learning clásico balanceado
+│   └── CapsuleNet.ipynb                 # Redes de cápsulas para relaciones espaciales
+│
 ├── docs/                                # Documentación académica y discusión
 │   └── discussion.md                    # Análisis clínico, trade-offs y limitaciones
 │
