@@ -22,12 +22,13 @@ Todos los modelos fueron rigurosamente evaluados sobre las mismas **83 imágenes
 | **ResNet50 (Baseline 0.5)** | 83 | $0.500$ | 0.9615 | 0.8710 | 0.9259 | 0.9277 | 0.9434 | 0.9876 | 0.9931 | 0.0526 | 27 / 4 / 2 / 50 |
 | **CapsuleNet** | 83 | $0.500$ | 0.8846 | 0.7742 | 0.8679 | 0.8434 | 0.8762 | 0.9107 | 0.9475 | 0.1229 | 24 / 7 / 6 / 46 |
 | **CNN Personalizada (Deep)** | 83 | $0.500$ | 0.8077 | 0.8387 | 0.8936 | 0.8193 | 0.8485 | 0.8958 | 0.9336 | 0.1272 | 26 / 5 / 10 / 42 |
-| **EfficientNetB0 + CBAM** | 83 | $0.500$ | 0.4231 | 0.1613 | 0.4583 | 0.3253 | 0.4400 | 0.1948 | — | — | 5 / 26 / 30 / 22 |
+| **EfficientNetB0 + CBAM** | 83 | $0.500$ | 0.4038 | 0.3871 | 0.5250 | 0.3976 | 0.4565 | 0.3679 | 0.5416 | 0.2522 | 12 / 19 / 31 / 21 |
 
 > 📌 **Notas Metodológicas:**
 > 1. **Calibración y Tamizaje:** `ConvNeXt-Tiny` prioriza la seguridad clínica mediante calibración de temperatura ($T=2.1648$) y optimización de umbral ($\tau=0.379$), logrando **cero falsos negativos ($FN=0$)**.
-> 2. **Corrección de Muestra Estandarizada:** `EfficientNetB0` se reporta formalmente sobre las 83 imágenes originales (corrigiendo reportes preliminares internos que evaluaban sobre 664 réplicas con TTA).
-> 3. **Análisis de Colapso en CBAM:** La arquitectura `EfficientNetB0 + CBAM` evidenció colapso de gradiente ($AUC=0.1948$) atribuible a la inserción de bloques de atención no preentrenados sobre pesos congelados de transfer learning.
+> 2. **EfficientNetB0 (Baseline vs. CBAM):** 
+>    * El baseline de `EfficientNetB0` alcanza el **máximo AUC-ROC (0.9950)** y la mejor calibración probabilística (**Brier = 0.0378**).
+>    * `EfficientNetB0 + CBAM` fue completamente inferido sobre las 83 imágenes de test para completar sus métricas (PR-AUC: 0.5416, Brier: 0.2522). Este resultado cuantitativo confirma el colapso de gradiente en la atención espacial cuando se insertan módulos sin preentrenamiento sobre transfer learning.
 > 
 > Para la discusión médica completa y el análisis de trade-offs diagnósticos, consulta [docs/discussion.md](docs/discussion.md).
 
@@ -62,7 +63,8 @@ PROYECTO_FINAL/
 │
 ├── scripts/                             # Automatizaciones y pipelines
 │   ├── consolidate_metrics.py           # Script consolidador de métricas clínicas
-│   └── update_benchmark_markdown.py     # Generador automático de tablas comparativas
+│   ├── update_benchmark_markdown.py     # Generador automático de tablas comparativas
+│   └── rebuild_and_evaluate_cbam.py     # Inferencia directa y evaluación de modelo CBAM
 │
 ├── src/                                 # Módulos transversales del proyecto
 │   ├── __init__.py

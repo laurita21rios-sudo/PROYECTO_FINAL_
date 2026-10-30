@@ -144,23 +144,24 @@
   },
   "EfficientNetB0 + CBAM": {
     "threshold": 0.5,
-    "accuracy": 0.3253012048192771,
-    "balanced_accuracy": 0.2921836228287841,
-    "sensitivity": 0.4230769230769231,
-    "specificity": 0.1612903225806451,
-    "precision": 0.4583333333333333,
-    "f1_score": 0.44,
-    "roc_auc": 0.194789081885856,
-    "pr_auc": null,
-    "brier_score": null,
+    "accuracy": 0.39759036144578314,
+    "balanced_accuracy": 0.395409429280397,
+    "sensitivity": 0.40384615384615385,
+    "specificity": 0.3870967741935484,
+    "precision": 0.525,
+    "f1_score": 0.45652173913043476,
+    "roc_auc": 0.36786600496277916,
+    "pr_auc": 0.5416248981446702,
+    "brier_score": 0.2522184511049929,
     "confusion_matrix": {
-      "tn": 5,
-      "fp": 26,
-      "fn": 30,
-      "tp": 22
+      "tn": 12,
+      "fp": 19,
+      "fn": 31,
+      "tp": 21
     },
+    "total_samples": 83,
     "evaluation_set": "83 imágenes originales",
-    "note": "Colapso de gradiente - módulo CBAM no preentrenado"
+    "note": "Inferencia validada N=83. Colapso de atención espacial CBAM (rendimiento inferior al azar sin preentrenamiento)."
   },
   "VGG16 (Fine-Tuned)": {
     "threshold": 0.5,
