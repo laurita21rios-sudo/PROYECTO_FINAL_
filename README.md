@@ -91,7 +91,26 @@ source .venv/bin/activate  # En Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Ejecutar la consolidación de métricas
+### 3. Descarga Automática del Dataset desde Kaggle
+El dataset base de entrenamiento y evaluación es [`mohamedabdalkader/indian-diabetic-retinopathy-image-dataset-idrid2`](https://www.kaggle.com/datasets/mohamedabdalkader/indian-diabetic-retinopathy-image-dataset-idrid2). Puedes descargarlo directamente mediante el CLI de Kaggle:
+
+```bash
+kaggle datasets download -d mohamedabdalkader/indian-diabetic-retinopathy-image-dataset-idrid2 -p data/IDRiD2 --unzip
+```
+
+### 4. Soporte Multi-Entorno (Local / Kaggle / Colab)
+El proyecto incluye un detector automático de entorno en [`src/env_setup.py`](src/env_setup.py). Tanto los notebooks como los scripts adaptan sus rutas de trabajo y tamaño de lote (`BATCH_SIZE`) según la plataforma:
+
+```python
+from src.env_setup import get_env_paths
+
+cfg = get_env_paths()
+print(f"Entorno activo: {cfg['env']}")          # 'local', 'kaggle' o 'colab'
+print(f"Ruta de datos: {cfg['data_dir']}")       # Resuelve automáticamente
+print(f"Batch size: {cfg['batch_size']}")        # 32 en GPU nube, 16 en local
+```
+
+### 5. Ejecutar la consolidación de métricas
 Para recalcular y actualizar automáticamente la tabla de resultados a partir de los registros de inferencia:
 
 ```bash
