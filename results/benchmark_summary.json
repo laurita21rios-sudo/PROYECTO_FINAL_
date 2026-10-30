@@ -38,6 +38,7 @@
         "upper_95": 0.9137931034482758
       }
     },
+    "evaluation_set": "83 imágenes originales",
     "note": "Screening clínico: Sensibilidad 100% (FN=0)"
   },
   "ResNet50 (Fine-Tuning Opt)": {
@@ -49,14 +50,15 @@
     "precision": 0.9607843137254902,
     "f1_score": 0.9514563106796117,
     "roc_auc": 0.9875930521091811,
-    "pr_auc": 0.9931229778979762,
-    "brier_score": null,
+    "pr_auc": 0.9930601664128169,
+    "brier_score": 0.05263452453586821,
     "confusion_matrix": {
       "tn": 29,
       "fp": 2,
       "fn": 3,
       "tp": 49
     },
+    "evaluation_set": "83 imágenes originales",
     "note": "Mayor F1-Score (0.9515) y balance general"
   },
   "ResNet50 (Baseline 0.5)": {
@@ -68,15 +70,37 @@
     "precision": 0.9259259259259259,
     "f1_score": 0.9433962264150944,
     "roc_auc": 0.9875930521091811,
-    "pr_auc": 0.9931229778979762,
-    "brier_score": null,
+    "pr_auc": 0.9930601664128169,
+    "brier_score": 0.05263452453586821,
     "confusion_matrix": {
       "tn": 27,
       "fp": 4,
       "fn": 2,
       "tp": 50
     },
+    "evaluation_set": "83 imágenes originales",
     "note": "Umbral estándar 0.5"
+  },
+  "EfficientNetB0 (Baseline, N=83)": {
+    "threshold": 0.5,
+    "accuracy": 0.9518072289156626,
+    "balanced_accuracy": 0.9485111662531017,
+    "sensitivity": 0.9615384615384616,
+    "specificity": 0.9354838709677419,
+    "precision": 0.9615384615384616,
+    "f1_score": 0.9615384615384616,
+    "roc_auc": 0.9950372208436724,
+    "pr_auc": 0.9971389949303379,
+    "brier_score": 0.037833575468478424,
+    "confusion_matrix": {
+      "tn": 29,
+      "fp": 2,
+      "fn": 2,
+      "tp": 50
+    },
+    "total_samples": 83,
+    "evaluation_set": "83 imágenes originales (corregido desde N=664 con TTA)",
+    "note": "Mejor AUC-ROC global (0.9950). Evaluación sobre imágenes originales."
   },
   "CNN Personalizada (Custom Deep)": {
     "threshold": 0.5,
@@ -88,14 +112,15 @@
     "f1_score": 0.8484848484848485,
     "roc_auc": 0.8957816377171216,
     "pr_auc": 0.9336446556310388,
-    "brier_score": 0.12723574042320251,
+    "brier_score": 0.1272357404232025,
     "confusion_matrix": {
       "tn": 26,
       "fp": 5,
       "fn": 10,
       "tp": 42
     },
-    "note": "Baseline con explicabilidad Grad-CAM auditada"
+    "evaluation_set": "83 imágenes originales",
+    "note": "Baseline convolucional con explicabilidad Grad-CAM auditada"
   },
   "CapsuleNet": {
     "threshold": 0.5,
@@ -105,26 +130,27 @@
     "specificity": 0.7741935483870968,
     "precision": 0.8679245283018868,
     "f1_score": 0.8761904761904762,
-    "roc_auc": null,
-    "pr_auc": null,
+    "roc_auc": 0.9106699751861043,
+    "pr_auc": 0.9475197784745873,
+    "brier_score": 0.12293115776932448,
     "confusion_matrix": {
       "tn": 24,
       "fp": 7,
       "fn": 6,
       "tp": 46
     },
-    "total_samples": 83,
+    "evaluation_set": "83 imágenes originales",
     "note": "Red de cápsulas para relaciones espaciales"
   },
   "EfficientNetB0 + CBAM": {
     "threshold": 0.5,
     "accuracy": 0.3253012048192771,
-    "balanced_accuracy": 0.29218362282878413,
+    "balanced_accuracy": 0.2921836228287841,
     "sensitivity": 0.4230769230769231,
-    "specificity": 0.16129032258064516,
+    "specificity": 0.1612903225806451,
     "precision": 0.4583333333333333,
     "f1_score": 0.44,
-    "roc_auc": 0.19478908188585609,
+    "roc_auc": 0.194789081885856,
     "pr_auc": null,
     "brier_score": null,
     "confusion_matrix": {
@@ -133,6 +159,28 @@
       "fn": 30,
       "tp": 22
     },
-    "note": "Colapso/bajo desempeño de atención CBAM"
+    "evaluation_set": "83 imágenes originales",
+    "note": "Colapso de gradiente - módulo CBAM no preentrenado"
+  },
+  "VGG16 (Fine-Tuned)": {
+    "threshold": 0.5,
+    "accuracy": 0.9518072289156626,
+    "balanced_accuracy": 0.9485111662531017,
+    "sensitivity": 0.9615384615384616,
+    "specificity": 0.9354838709677419,
+    "precision": 0.9615384615384616,
+    "f1_score": 0.9615384615384616,
+    "roc_auc": 0.989454094292804,
+    "pr_auc": 0.9944,
+    "brier_score": null,
+    "confusion_matrix": {
+      "tn": 29,
+      "fp": 2,
+      "fn": 2,
+      "tp": 50
+    },
+    "total_samples": 83,
+    "evaluation_set": "83 imágenes originales",
+    "note": "Transfer Learning 3 fases (Block 4 y 5 descongelados). Precision y Recall balanceados."
   }
 }
