@@ -1,0 +1,18 @@
+{
+  "model_name": "ConvNeXt_Tiny_Clinical",
+  "image_size": [
+    320,
+    320
+  ],
+  "class_names": {
+    "0": "No referible",
+    "1": "Referible"
+  },
+  "temperature": 2.164819697330949,
+  "clinical_threshold": 0.37852828387458237,
+  "threshold_method": "Máxima especificidad con sensibilidad >= 0.90",
+  "target_sensitivity": 0.9,
+  "uncertainty_margin": 0.08,
+  "tta_horizontal_flip": true,
+  "preprocessing": "crop_black_borders + resize_with_pad + ConvNeXt internal normalization"
+}

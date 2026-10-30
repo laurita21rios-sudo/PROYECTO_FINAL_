@@ -1,0 +1,21 @@
+image,image_path,probability_referable,predicted_label,predicted_class,confidence,Valor Verdadero
+IDRiD_178_L6,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_178_L6.jpg,0.9999418,1,Referible,0.9999418,1
+IDRiD_003_R22,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\test\images\IDRiD_003_R22.jpg,0.99962795,1,Referible,0.99962795,1
+IDRiD_125_R8,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_125_R8.jpg,0.99999994,1,Referible,0.99999994,1
+IDRiD_182_L14,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_182_L14.jpg,0.00015057717,0,No referible,0.99984944,0
+IDRiD_111_R22,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_111_R22.jpg,0.99778086,1,Referible,0.99778086,1
+IDRiD_155_R22,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_155_R22.jpg,0.014785935,0,No referible,0.98521405,0
+IDRiD_060_L14,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\test\images\IDRiD_060_L14.jpg,0.22258985,0,No referible,0.77741015,1
+IDRiD_290_R16,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_290_R16.jpg,0.00047806118,0,No referible,0.9995219,0
+IDRiD_031_R16,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\test\images\IDRiD_031_R16.jpg,0.99373704,1,Referible,0.99373704,1
+IDRiD_076_R8,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\test\images\IDRiD_076_R8.jpg,8.565828e-05,0,No referible,0.99991435,1
+IDRiD_273_R22,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_273_R22.jpg,0.000435835,0,No referible,0.9995642,0
+IDRiD_190_R8,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_190_R8.jpg,0.023303969,0,No referible,0.976696,0
+IDRiD_361_R16,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_361_R16.jpg,0.9999956,1,Referible,0.9999956,1
+IDRiD_197_L20,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_197_L20.jpg,6.6976274e-05,0,No referible,0.999933,0
+IDRiD_366_L6,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_366_L6.jpg,0.9999996,1,Referible,0.9999996,1
+IDRiD_251_R8,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_251_R8.jpg,0.00019904622,0,No referible,0.999801,0
+IDRiD_388_R8,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_388_R8.jpg,0.010224019,0,No referible,0.98977596,0
+IDRiD_353_L20,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_353_L20.jpg,0.00023618556,0,No referible,0.9997638,0
+IDRiD_307_R16,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_307_R16.jpg,0.8197719,0,No referible,0.18022811,0
+IDRiD_225_R8,c:\Users\lauri\Documents\PROYECTO FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_225_R8.jpg,0.00010495893,0,No referible,0.99989504,0

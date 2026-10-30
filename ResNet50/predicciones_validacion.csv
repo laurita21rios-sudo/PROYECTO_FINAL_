@@ -1,0 +1,84 @@
+Image name,patient_id,binary_label,image_path,probability_referable,predicted_label,predicted_class,correct_prediction
+IDRiD_003,IDRiD_003,1,data\IDRiD2\IDRiD\train\images\IDRiD_003.jpg,0.9303348,1,Referible,True
+IDRiD_012,IDRiD_012,1,data\IDRiD2\IDRiD\train\images\IDRiD_012.jpg,0.85728467,1,Referible,True
+IDRiD_028,IDRiD_028,1,data\IDRiD2\IDRiD\train\images\IDRiD_028.jpg,0.98334694,1,Referible,True
+IDRiD_029,IDRiD_029,1,data\IDRiD2\IDRiD\train\images\IDRiD_029.jpg,0.9835238,1,Referible,True
+IDRiD_031,IDRiD_031,1,data\IDRiD2\IDRiD\train\images\IDRiD_031.jpg,0.9925629,1,Referible,True
+IDRiD_040,IDRiD_040,1,data\IDRiD2\IDRiD\train\images\IDRiD_040.jpg,0.6933076,1,Referible,True
+IDRiD_045,IDRiD_045,1,data\IDRiD2\IDRiD\train\images\IDRiD_045.jpg,0.8542546,1,Referible,True
+IDRiD_046,IDRiD_046,1,data\IDRiD2\IDRiD\train\images\IDRiD_046.jpg,0.7247441,1,Referible,True
+IDRiD_052,IDRiD_052,1,data\IDRiD2\IDRiD\train\images\IDRiD_052.jpg,0.88277066,1,Referible,True
+IDRiD_053,IDRiD_053,1,data\IDRiD2\IDRiD\train\images\IDRiD_053.jpg,0.99746066,1,Referible,True
+IDRiD_060,IDRiD_060,1,data\IDRiD2\IDRiD\train\images\IDRiD_060.jpg,0.85458744,1,Referible,True
+IDRiD_063,IDRiD_063,1,data\IDRiD2\IDRiD\train\images\IDRiD_063.jpg,0.9738656,1,Referible,True
+IDRiD_076,IDRiD_076,1,data\IDRiD2\IDRiD\train\images\IDRiD_076.jpg,0.8760523,1,Referible,True
+IDRiD_079,IDRiD_079,0,data\IDRiD2\IDRiD\train\images\IDRiD_079.jpg,0.02908243,0,No referible,True
+IDRiD_086,IDRiD_086,1,data\IDRiD2\IDRiD\train\images\IDRiD_086.jpg,0.9636911,1,Referible,True
+IDRiD_094,IDRiD_094,1,data\IDRiD2\IDRiD\train\images\IDRiD_094.jpg,0.80829865,1,Referible,True
+IDRiD_098,IDRiD_098,1,data\IDRiD2\IDRiD\train\images\IDRiD_098.jpg,0.9671049,1,Referible,True
+IDRiD_106,IDRiD_106,1,data\IDRiD2\IDRiD\train\images\IDRiD_106.jpg,0.8757423,1,Referible,True
+IDRiD_111,IDRiD_111,1,data\IDRiD2\IDRiD\train\images\IDRiD_111.jpg,0.9411339,1,Referible,True
+IDRiD_116,IDRiD_116,1,data\IDRiD2\IDRiD\train\images\IDRiD_116.jpg,0.77111036,1,Referible,True
+IDRiD_120,IDRiD_120,1,data\IDRiD2\IDRiD\train\images\IDRiD_120.jpg,0.713018,1,Referible,True
+IDRiD_122,IDRiD_122,1,data\IDRiD2\IDRiD\train\images\IDRiD_122.jpg,0.8378434,1,Referible,True
+IDRiD_125,IDRiD_125,1,data\IDRiD2\IDRiD\train\images\IDRiD_125.jpg,0.9966256,1,Referible,True
+IDRiD_132,IDRiD_132,1,data\IDRiD2\IDRiD\train\images\IDRiD_132.jpg,0.89950114,1,Referible,True
+IDRiD_133,IDRiD_133,1,data\IDRiD2\IDRiD\train\images\IDRiD_133.jpg,0.5429327,0,No referible,False
+IDRiD_134,IDRiD_134,1,data\IDRiD2\IDRiD\train\images\IDRiD_134.jpg,0.7278805,1,Referible,True
+IDRiD_148,IDRiD_148,0,data\IDRiD2\IDRiD\train\images\IDRiD_148.jpg,0.6910695,1,Referible,False
+IDRiD_154,IDRiD_154,0,data\IDRiD2\IDRiD\train\images\IDRiD_154.jpg,0.1570663,0,No referible,True
+IDRiD_155,IDRiD_155,0,data\IDRiD2\IDRiD\train\images\IDRiD_155.jpg,0.39014786,0,No referible,True
+IDRiD_171,IDRiD_171,0,data\IDRiD2\IDRiD\train\images\IDRiD_171.jpg,0.16992372,0,No referible,True
+IDRiD_178,IDRiD_178,1,data\IDRiD2\IDRiD\train\images\IDRiD_178.jpg,0.9544341,1,Referible,True
+IDRiD_182,IDRiD_182,0,data\IDRiD2\IDRiD\train\images\IDRiD_182.jpg,0.07244518,0,No referible,True
+IDRiD_185,IDRiD_185,1,data\IDRiD2\IDRiD\train\images\IDRiD_185.jpg,0.28630856,0,No referible,False
+IDRiD_190,IDRiD_190,0,data\IDRiD2\IDRiD\train\images\IDRiD_190.jpg,0.055674154,0,No referible,True
+IDRiD_194,IDRiD_194,0,data\IDRiD2\IDRiD\train\images\IDRiD_194.jpg,0.0053100605,0,No referible,True
+IDRiD_197,IDRiD_197,0,data\IDRiD2\IDRiD\train\images\IDRiD_197.jpg,0.036767885,0,No referible,True
+IDRiD_203,IDRiD_203,0,data\IDRiD2\IDRiD\train\images\IDRiD_203.jpg,0.47130543,0,No referible,True
+IDRiD_204,IDRiD_204,0,data\IDRiD2\IDRiD\train\images\IDRiD_204.jpg,0.03697585,0,No referible,True
+IDRiD_209,IDRiD_209,0,data\IDRiD2\IDRiD\train\images\IDRiD_209.jpg,0.0004975313,0,No referible,True
+IDRiD_221,IDRiD_221,0,data\IDRiD2\IDRiD\train\images\IDRiD_221.jpg,0.040978212,0,No referible,True
+IDRiD_225,IDRiD_225,0,data\IDRiD2\IDRiD\train\images\IDRiD_225.jpg,0.0010766839,0,No referible,True
+IDRiD_232,IDRiD_232,1,data\IDRiD2\IDRiD\train\images\IDRiD_232.jpg,0.9538976,1,Referible,True
+IDRiD_239,IDRiD_239,1,data\IDRiD2\IDRiD\train\images\IDRiD_239.jpg,0.9914741,1,Referible,True
+IDRiD_246,IDRiD_246,1,data\IDRiD2\IDRiD\train\images\IDRiD_246.jpg,0.9711904,1,Referible,True
+IDRiD_250,IDRiD_250,0,data\IDRiD2\IDRiD\train\images\IDRiD_250.jpg,0.05573444,0,No referible,True
+IDRiD_251,IDRiD_251,0,data\IDRiD2\IDRiD\train\images\IDRiD_251.jpg,0.015358872,0,No referible,True
+IDRiD_254,IDRiD_254,1,data\IDRiD2\IDRiD\train\images\IDRiD_254.jpg,0.9793617,1,Referible,True
+IDRiD_258,IDRiD_258,0,data\IDRiD2\IDRiD\train\images\IDRiD_258.jpg,0.25286227,0,No referible,True
+IDRiD_271,IDRiD_271,1,data\IDRiD2\IDRiD\train\images\IDRiD_271.jpg,0.9723708,1,Referible,True
+IDRiD_273,IDRiD_273,0,data\IDRiD2\IDRiD\train\images\IDRiD_273.jpg,0.060768753,0,No referible,True
+IDRiD_276,IDRiD_276,0,data\IDRiD2\IDRiD\train\images\IDRiD_276.jpg,0.0061902995,0,No referible,True
+IDRiD_279,IDRiD_279,0,data\IDRiD2\IDRiD\train\images\IDRiD_279.jpg,0.02908243,0,No referible,True
+IDRiD_284,IDRiD_284,1,data\IDRiD2\IDRiD\train\images\IDRiD_284.jpg,0.6881295,1,Referible,True
+IDRiD_290,IDRiD_290,0,data\IDRiD2\IDRiD\train\images\IDRiD_290.jpg,0.00938302,0,No referible,True
+IDRiD_296,IDRiD_296,1,data\IDRiD2\IDRiD\train\images\IDRiD_296.jpg,0.99733835,1,Referible,True
+IDRiD_306,IDRiD_306,1,data\IDRiD2\IDRiD\train\images\IDRiD_306.jpg,0.8892719,1,Referible,True
+IDRiD_307,IDRiD_307,0,data\IDRiD2\IDRiD\train\images\IDRiD_307.jpg,0.58108836,0,No referible,True
+IDRiD_318,IDRiD_318,0,data\IDRiD2\IDRiD\train\images\IDRiD_318.jpg,0.0048572756,0,No referible,True
+IDRiD_320,IDRiD_320,1,data\IDRiD2\IDRiD\train\images\IDRiD_320.jpg,0.9751069,1,Referible,True
+IDRiD_322,IDRiD_322,1,data\IDRiD2\IDRiD\train\images\IDRiD_322.jpg,0.9900209,1,Referible,True
+IDRiD_327,IDRiD_327,1,data\IDRiD2\IDRiD\train\images\IDRiD_327.jpg,0.98334694,1,Referible,True
+IDRiD_329,IDRiD_329,1,data\IDRiD2\IDRiD\train\images\IDRiD_329.jpg,0.91455597,1,Referible,True
+IDRiD_341,IDRiD_341,1,data\IDRiD2\IDRiD\train\images\IDRiD_341.jpg,0.9931499,1,Referible,True
+IDRiD_343,IDRiD_343,1,data\IDRiD2\IDRiD\train\images\IDRiD_343.jpg,0.9104966,1,Referible,True
+IDRiD_345,IDRiD_345,0,data\IDRiD2\IDRiD\train\images\IDRiD_345.jpg,0.026415246,0,No referible,True
+IDRiD_346,IDRiD_346,0,data\IDRiD2\IDRiD\train\images\IDRiD_346.jpg,0.041267242,0,No referible,True
+IDRiD_352,IDRiD_352,0,data\IDRiD2\IDRiD\train\images\IDRiD_352.jpg,0.08013232,0,No referible,True
+IDRiD_353,IDRiD_353,0,data\IDRiD2\IDRiD\train\images\IDRiD_353.jpg,0.05143584,0,No referible,True
+IDRiD_357,IDRiD_357,1,data\IDRiD2\IDRiD\train\images\IDRiD_357.jpg,0.9960936,1,Referible,True
+IDRiD_361,IDRiD_361,1,data\IDRiD2\IDRiD\train\images\IDRiD_361.jpg,0.98019546,1,Referible,True
+IDRiD_366,IDRiD_366,1,data\IDRiD2\IDRiD\train\images\IDRiD_366.jpg,0.98460144,1,Referible,True
+IDRiD_369,IDRiD_369,1,data\IDRiD2\IDRiD\train\images\IDRiD_369.jpg,0.98755145,1,Referible,True
+IDRiD_380,IDRiD_380,1,data\IDRiD2\IDRiD\train\images\IDRiD_380.jpg,0.9818579,1,Referible,True
+IDRiD_384,IDRiD_384,1,data\IDRiD2\IDRiD\train\images\IDRiD_384.jpg,0.99498767,1,Referible,True
+IDRiD_385,IDRiD_385,1,data\IDRiD2\IDRiD\train\images\IDRiD_385.jpg,0.9926513,1,Referible,True
+IDRiD_388,IDRiD_388,0,data\IDRiD2\IDRiD\train\images\IDRiD_388.jpg,0.671338,1,Referible,False
+IDRiD_392,IDRiD_392,1,data\IDRiD2\IDRiD\train\images\IDRiD_392.jpg,0.99378836,1,Referible,True
+IDRiD_398,IDRiD_398,1,data\IDRiD2\IDRiD\train\images\IDRiD_398.jpg,0.9580234,1,Referible,True
+IDRiD_399,IDRiD_399,0,data\IDRiD2\IDRiD\train\images\IDRiD_399.jpg,0.19886869,0,No referible,True
+IDRiD_403,IDRiD_403,0,data\IDRiD2\IDRiD\train\images\IDRiD_403.jpg,0.120111294,0,No referible,True
+IDRiD_408,IDRiD_408,0,data\IDRiD2\IDRiD\train\images\IDRiD_408.jpg,0.5983349,0,No referible,True
+IDRiD_410,IDRiD_410,1,data\IDRiD2\IDRiD\train\images\IDRiD_410.jpg,0.63153815,1,Referible,True
+IDRiD_412,IDRiD_412,1,data\IDRiD2\IDRiD\train\images\IDRiD_412.jpg,0.22186624,0,No referible,False

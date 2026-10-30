@@ -1,0 +1,2 @@
+Imagen TRAIN,Paciente TRAIN,Grado TRAIN,Clase TRAIN,Imagen VAL,Paciente VAL,Grado VAL,Clase VAL,Mismo paciente,Mismo grado,Ruta TRAIN,Ruta VAL,SHA256
+IDRiD_333,IDRiD_333,2,1,IDRiD_045,IDRiD_045,2,1,False,True,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_333.jpg,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_045.jpg,fe4f412a179adf78bd9a367d1702878d45302db3f7706c4bf7efc834a312e91c

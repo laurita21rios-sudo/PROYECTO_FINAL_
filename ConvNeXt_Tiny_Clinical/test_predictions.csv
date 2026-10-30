@@ -1,0 +1,84 @@
+Image name,patient_id,binary_label,image_path,raw_probability,calibrated_probability,predicted_label,predicted_class,correct,manual_review
+IDRiD_003,IDRiD_003,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_003.jpg,0.981203019618988,0.8614016131361303,1,Referible,True,False
+IDRiD_012,IDRiD_012,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_012.jpg,0.9547430276870728,0.8035246475317075,1,Referible,True,False
+IDRiD_028,IDRiD_028,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_028.jpg,0.9996458292007446,0.9751619248909412,1,Referible,True,False
+IDRiD_029,IDRiD_029,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_029.jpg,0.9999874830245972,0.994592151929363,1,Referible,True,False
+IDRiD_031,IDRiD_031,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_031.jpg,0.9997739791870117,0.9797226070782852,1,Referible,True,False
+IDRiD_040,IDRiD_040,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_040.jpg,0.9852578639984131,0.8744760888297733,1,Referible,True,False
+IDRiD_045,IDRiD_045,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_045.jpg,0.8019140362739563,0.6560904538124018,1,Referible,True,False
+IDRiD_046,IDRiD_046,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_046.jpg,0.9886235594749451,0.8871966614057099,1,Referible,True,False
+IDRiD_052,IDRiD_052,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_052.jpg,0.9653661251068115,0.8230515567981599,1,Referible,True,False
+IDRiD_053,IDRiD_053,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_053.jpg,0.9999979734420776,0.9976606687037741,1,Referible,True,False
+IDRiD_060,IDRiD_060,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_060.jpg,0.987750232219696,0.883689959402517,1,Referible,True,False
+IDRiD_063,IDRiD_063,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_063.jpg,0.9995907545089722,0.9734917803624896,1,Referible,True,False
+IDRiD_076,IDRiD_076,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_076.jpg,0.9998244047164917,0.9819145895022557,1,Referible,True,False
+IDRiD_079,IDRiD_079,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_079.jpg,0.4201105833053589,0.46284617420722834,1,Referible,False,False
+IDRiD_086,IDRiD_086,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_086.jpg,0.9994758367538452,0.9703748488917218,1,Referible,True,False
+IDRiD_094,IDRiD_094,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_094.jpg,0.9999618530273438,0.990984115756108,1,Referible,True,False
+IDRiD_098,IDRiD_098,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_098.jpg,0.9998595714569092,0.9836597559869752,1,Referible,True,False
+IDRiD_106,IDRiD_106,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_106.jpg,0.9022663831710815,0.7362795538765995,1,Referible,True,False
+IDRiD_111,IDRiD_111,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_111.jpg,0.9991297721862793,0.9628423981239114,1,Referible,True,False
+IDRiD_116,IDRiD_116,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_116.jpg,0.9975477457046509,0.9413332383292287,1,Referible,True,False
+IDRiD_120,IDRiD_120,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_120.jpg,0.9968221187591553,0.9343400738150512,1,Referible,True,False
+IDRiD_122,IDRiD_122,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_122.jpg,0.9970637559890747,0.9365526231438148,1,Referible,True,False
+IDRiD_125,IDRiD_125,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_125.jpg,0.9999207258224487,0.9874052915618571,1,Referible,True,False
+IDRiD_132,IDRiD_132,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_132.jpg,0.9997469186782837,0.9786581677654237,1,Referible,True,False
+IDRiD_133,IDRiD_133,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_133.jpg,0.7517606019973755,0.6252358759432041,1,Referible,True,False
+IDRiD_134,IDRiD_134,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_134.jpg,0.9866429567337036,0.879462986418342,1,Referible,True,False
+IDRiD_148,IDRiD_148,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_148.jpg,0.8968017101287842,0.7308189970044296,1,Referible,False,False
+IDRiD_154,IDRiD_154,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_154.jpg,0.6112060546875,0.5520534736290077,1,Referible,False,False
+IDRiD_155,IDRiD_155,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_155.jpg,0.09374149888753891,0.2596046737430056,0,No referible,True,False
+IDRiD_171,IDRiD_171,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_171.jpg,0.9395618438720703,0.7803053067906817,1,Referible,False,False
+IDRiD_178,IDRiD_178,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_178.jpg,0.9998916387557983,0.9854772512967144,1,Referible,True,False
+IDRiD_182,IDRiD_182,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_182.jpg,0.13983464241027832,0.3017084230762743,0,No referible,True,True
+IDRiD_185,IDRiD_185,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_185.jpg,0.8566576242446899,0.6954753483723947,1,Referible,True,False
+IDRiD_190,IDRiD_190,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_190.jpg,0.19043341279029846,0.33883130031770714,0,No referible,True,True
+IDRiD_194,IDRiD_194,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_194.jpg,0.004275674000382423,0.07462145014646325,0,No referible,True,False
+IDRiD_197,IDRiD_197,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_197.jpg,0.014590712264180183,0.12499356969491915,0,No referible,True,False
+IDRiD_203,IDRiD_203,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_203.jpg,0.47394710779190063,0.4879567498961462,1,Referible,False,False
+IDRiD_204,IDRiD_204,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_204.jpg,0.007208815775811672,0.09320492897188608,0,No referible,True,False
+IDRiD_209,IDRiD_209,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_209.jpg,0.0007236104574985802,0.03422361275939614,0,No referible,True,False
+IDRiD_221,IDRiD_221,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_221.jpg,0.04464257135987282,0.19543371164867573,0,No referible,True,False
+IDRiD_225,IDRiD_225,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_225.jpg,0.00033694927697069943,0.024286233414530747,0,No referible,True,False
+IDRiD_232,IDRiD_232,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_232.jpg,0.9998767375946045,0.9846002617703922,1,Referible,True,False
+IDRiD_239,IDRiD_239,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_239.jpg,0.9992371797561646,0.9649608851883489,1,Referible,True,False
+IDRiD_246,IDRiD_246,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_246.jpg,0.9999821782112122,0.9936394638382301,1,Referible,True,False
+IDRiD_250,IDRiD_250,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_250.jpg,0.02914876490831375,0.1652843399402908,0,No referible,True,False
+IDRiD_251,IDRiD_251,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_251.jpg,0.00038219697307795286,0.02570487682721702,0,No referible,True,False
+IDRiD_254,IDRiD_254,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_254.jpg,0.9999747276306152,0.9925340605172579,1,Referible,True,False
+IDRiD_258,IDRiD_258,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_258.jpg,0.17412176728248596,0.3275941879241884,0,No referible,True,True
+IDRiD_271,IDRiD_271,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_271.jpg,0.9966369867324829,0.9327117170744988,1,Referible,True,False
+IDRiD_273,IDRiD_273,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_273.jpg,0.002331869211047888,0.05739272612756302,0,No referible,True,False
+IDRiD_276,IDRiD_276,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_276.jpg,0.0011621068697422743,0.042250119019653115,0,No referible,True,False
+IDRiD_279,IDRiD_279,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_279.jpg,0.4201105833053589,0.46284617420722834,1,Referible,False,False
+IDRiD_284,IDRiD_284,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_284.jpg,0.9951293468475342,0.9210947653228057,1,Referible,True,False
+IDRiD_290,IDRiD_290,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_290.jpg,0.0026166613679379225,0.06034853958290428,0,No referible,True,False
+IDRiD_296,IDRiD_296,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_296.jpg,0.9993061423301697,0.9664121202982119,1,Referible,True,False
+IDRiD_306,IDRiD_306,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_306.jpg,0.9824973940849304,0.8653606451808158,1,Referible,True,False
+IDRiD_307,IDRiD_307,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_307.jpg,0.4470418393611908,0.47546454194440513,1,Referible,False,False
+IDRiD_318,IDRiD_318,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_318.jpg,0.007244676351547241,0.09340025471584416,0,No referible,True,False
+IDRiD_320,IDRiD_320,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_320.jpg,0.999754786491394,0.9789608259603295,1,Referible,True,False
+IDRiD_322,IDRiD_322,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_322.jpg,0.9994806051254272,0.9704960283196479,1,Referible,True,False
+IDRiD_327,IDRiD_327,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_327.jpg,0.9996458292007446,0.9751619248909412,1,Referible,True,False
+IDRiD_329,IDRiD_329,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_329.jpg,0.9989154934883118,0.959024382805976,1,Referible,True,False
+IDRiD_341,IDRiD_341,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_341.jpg,0.9999797344207764,0.993253093375884,1,Referible,True,False
+IDRiD_343,IDRiD_343,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_343.jpg,0.9992631077766418,0.965497393182067,1,Referible,True,False
+IDRiD_345,IDRiD_345,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_345.jpg,0.00041520685772411525,0.026681226308207146,0,No referible,True,False
+IDRiD_346,IDRiD_346,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_346.jpg,0.0009544083150103688,0.038715543182245966,0,No referible,True,False
+IDRiD_352,IDRiD_352,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_352.jpg,0.0016201254911720753,0.04892604906508285,0,No referible,True,False
+IDRiD_353,IDRiD_353,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_353.jpg,0.007943953387439251,0.09709590505513335,0,No referible,True,False
+IDRiD_357,IDRiD_357,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_357.jpg,0.9999911785125732,0.9953955231739579,1,Referible,True,False
+IDRiD_361,IDRiD_361,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_361.jpg,0.999970555305481,0.9919923966207173,1,Referible,True,False
+IDRiD_366,IDRiD_366,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_366.jpg,0.9999775886535645,0.9929342824582339,1,Referible,True,False
+IDRiD_369,IDRiD_369,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_369.jpg,0.9999915361404419,0.9954823185182133,1,Referible,True,False
+IDRiD_380,IDRiD_380,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_380.jpg,0.9996234178543091,0.9744658492732285,1,Referible,True,False
+IDRiD_384,IDRiD_384,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_384.jpg,0.9985239505767822,0.9530404297948187,1,Referible,True,False
+IDRiD_385,IDRiD_385,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_385.jpg,0.9999968409538269,0.9971297487979319,1,Referible,True,False
+IDRiD_388,IDRiD_388,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_388.jpg,0.9171373844146729,0.7522258454460679,1,Referible,False,False
+IDRiD_392,IDRiD_392,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_392.jpg,0.9999947547912598,0.996374966032999,1,Referible,True,False
+IDRiD_398,IDRiD_398,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_398.jpg,0.9978490471839905,0.9445968214896879,1,Referible,True,False
+IDRiD_399,IDRiD_399,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_399.jpg,0.7179710268974304,0.6062648461020635,1,Referible,False,False
+IDRiD_403,IDRiD_403,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_403.jpg,0.20968782901763916,0.35139899181819745,0,No referible,True,True
+IDRiD_408,IDRiD_408,0,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_408.jpg,0.5305877327919006,0.5141433516268946,1,Referible,False,False
+IDRiD_410,IDRiD_410,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_410.jpg,0.9768005013465881,0.849117561047265,1,Referible,True,False
+IDRiD_412,IDRiD_412,1,C:\Users\lauri\Documents\PROYECTO_FINAL\data\IDRiD2\IDRiD\train\images\IDRiD_412.jpg,0.25893858075141907,0.3809027363494687,1,Referible,True,True

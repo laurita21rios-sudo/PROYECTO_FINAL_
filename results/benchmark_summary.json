@@ -1,0 +1,138 @@
+{
+  "ConvNeXt-Tiny (Clinical)": {
+    "threshold": 0.37852828387458237,
+    "accuracy": 0.8795180722891566,
+    "balanced_accuracy": 0.8387096774193548,
+    "sensitivity": 1.0,
+    "specificity": 0.6774193548387096,
+    "precision": 0.8387096774193549,
+    "f1_score": 0.9122807017543859,
+    "roc_auc": 0.9869727047146403,
+    "pr_auc": 0.9928626546266651,
+    "brier_score": 0.06269826910577792,
+    "confusion_matrix": {
+      "tn": 21,
+      "fp": 10,
+      "fn": 0,
+      "tp": 52
+    },
+    "confidence_intervals_95": {
+      "sensitivity": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "specificity": {
+        "lower_95": 0.5,
+        "upper_95": 0.8275862068965517
+      },
+      "roc_auc": {
+        "lower_95": 0.9682807353633125,
+        "upper_95": 0.9993802803379416
+      },
+      "pr_auc": {
+        "lower_95": 0.9815201658554888,
+        "upper_95": 0.9996374912648499
+      },
+      "balanced_accuracy": {
+        "lower_95": 0.75,
+        "upper_95": 0.9137931034482758
+      }
+    },
+    "note": "Screening clínico: Sensibilidad 100% (FN=0)"
+  },
+  "ResNet50 (Fine-Tuning Opt)": {
+    "threshold": 0.6315381526947021,
+    "accuracy": 0.9397590361445783,
+    "balanced_accuracy": 0.938895781637717,
+    "sensitivity": 0.9423076923076923,
+    "specificity": 0.9354838709677419,
+    "precision": 0.9607843137254902,
+    "f1_score": 0.9514563106796117,
+    "roc_auc": 0.9875930521091811,
+    "pr_auc": 0.9931229778979762,
+    "brier_score": null,
+    "confusion_matrix": {
+      "tn": 29,
+      "fp": 2,
+      "fn": 3,
+      "tp": 49
+    },
+    "note": "Mayor F1-Score (0.9515) y balance general"
+  },
+  "ResNet50 (Baseline 0.5)": {
+    "threshold": 0.5,
+    "accuracy": 0.927710843373494,
+    "balanced_accuracy": 0.9162531017369727,
+    "sensitivity": 0.9615384615384616,
+    "specificity": 0.8709677419354839,
+    "precision": 0.9259259259259259,
+    "f1_score": 0.9433962264150944,
+    "roc_auc": 0.9875930521091811,
+    "pr_auc": 0.9931229778979762,
+    "brier_score": null,
+    "confusion_matrix": {
+      "tn": 27,
+      "fp": 4,
+      "fn": 2,
+      "tp": 50
+    },
+    "note": "Umbral estándar 0.5"
+  },
+  "CNN Personalizada (Custom Deep)": {
+    "threshold": 0.5,
+    "accuracy": 0.8192771084337349,
+    "balanced_accuracy": 0.8232009925558312,
+    "sensitivity": 0.8076923076923077,
+    "specificity": 0.8387096774193549,
+    "precision": 0.8936170212765957,
+    "f1_score": 0.8484848484848485,
+    "roc_auc": 0.8957816377171216,
+    "pr_auc": 0.9336446556310388,
+    "brier_score": 0.12723574042320251,
+    "confusion_matrix": {
+      "tn": 26,
+      "fp": 5,
+      "fn": 10,
+      "tp": 42
+    },
+    "note": "Baseline con explicabilidad Grad-CAM auditada"
+  },
+  "CapsuleNet": {
+    "threshold": 0.5,
+    "accuracy": 0.8433734939759037,
+    "balanced_accuracy": 0.8294044665012407,
+    "sensitivity": 0.8846153846153846,
+    "specificity": 0.7741935483870968,
+    "precision": 0.8679245283018868,
+    "f1_score": 0.8761904761904762,
+    "roc_auc": null,
+    "pr_auc": null,
+    "confusion_matrix": {
+      "tn": 24,
+      "fp": 7,
+      "fn": 6,
+      "tp": 46
+    },
+    "total_samples": 83,
+    "note": "Red de cápsulas para relaciones espaciales"
+  },
+  "EfficientNetB0 + CBAM": {
+    "threshold": 0.5,
+    "accuracy": 0.3253012048192771,
+    "balanced_accuracy": 0.29218362282878413,
+    "sensitivity": 0.4230769230769231,
+    "specificity": 0.16129032258064516,
+    "precision": 0.4583333333333333,
+    "f1_score": 0.44,
+    "roc_auc": 0.19478908188585609,
+    "pr_auc": null,
+    "brier_score": null,
+    "confusion_matrix": {
+      "tn": 5,
+      "fp": 26,
+      "fn": 30,
+      "tp": 22
+    },
+    "note": "Colapso/bajo desempeño de atención CBAM"
+  }
+}

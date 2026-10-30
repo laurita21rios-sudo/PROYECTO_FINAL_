@@ -1,0 +1,56 @@
+{
+    "class_names": {
+        "0": "No referible",
+        "1": "Referible"
+    },
+    "selected_threshold": 0.8753141760826111,
+    "threshold_f1": 0.8753141760826111,
+    "threshold_sensitivity_90": 0.9823246598243713,
+    "metrics_threshold_0_5": {
+        "threshold": 0.5,
+        "accuracy": 0.9427710843373494,
+        "precision": 0.9334862385321101,
+        "sensitivity_recall": 0.9783653846153846,
+        "specificity": 0.8830645161290323,
+        "f1_score": 0.9553990610328639,
+        "npv": 0.9605263157894737,
+        "roc_auc": 0.9919160980148883,
+        "pr_auc": 0.995550717602513,
+        "true_negatives": 219,
+        "false_positives": 29,
+        "false_negatives": 9,
+        "true_positives": 407
+    },
+    "metrics_selected_threshold": {
+        "threshold": 0.8753141760826111,
+        "accuracy": 0.9548192771084337,
+        "precision": 0.9777227722772277,
+        "sensitivity_recall": 0.9495192307692307,
+        "specificity": 0.9637096774193549,
+        "f1_score": 0.9634146341463414,
+        "npv": 0.9192307692307692,
+        "roc_auc": 0.9919160980148883,
+        "pr_auc": 0.995550717602513,
+        "true_negatives": 239,
+        "false_positives": 9,
+        "false_negatives": 21,
+        "true_positives": 395
+    },
+    "metrics_sensitivity_90": {
+        "threshold": 0.9823246598243713,
+        "accuracy": 0.9487951807228916,
+        "precision": 0.9948186528497409,
+        "sensitivity_recall": 0.9230769230769231,
+        "specificity": 0.9919354838709677,
+        "f1_score": 0.9576059850374065,
+        "npv": 0.8848920863309353,
+        "roc_auc": 0.9919160980148883,
+        "pr_auc": 0.995550717602513,
+        "true_negatives": 246,
+        "false_positives": 2,
+        "false_negatives": 32,
+        "true_positives": 384
+    },
+    "best_candidate_model": "c:\\Users\\lauri\\Documents\\PROYECTO FINAL\\efficientnetb0_rdr\\efficientnetb0_finetuned_best.keras",
+    "final_model": "c:\\Users\\lauri\\Documents\\PROYECTO FINAL\\efficientnetb0_rdr\\efficientnetb0_rdr_final.keras"
+}
