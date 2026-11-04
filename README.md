@@ -48,6 +48,7 @@ Cada paciente aparece exactamente **una sola vez** en el estudio (cero réplicas
 4. [`04_ConvNeXt_Tiny_Sin_Aumento.ipynb`](enfoque_sin_aumento_oficial/notebooks/04_ConvNeXt_Tiny_Sin_Aumento.ipynb) — Comparativa Base
 5. [`05_CNN_Desde_Cero_Sin_Aumento.ipynb`](enfoque_sin_aumento_oficial/notebooks/05_CNN_Desde_Cero_Sin_Aumento.ipynb) — Línea Base sin pre-entrenamiento
 6. [`06_EfficientNetB0_CBAM_Residual_Sin_Aumento.ipynb`](enfoque_sin_aumento_oficial/notebooks/06_EfficientNetB0_CBAM_Residual_Sin_Aumento.ipynb) — Atención CBAM Residual con escalares aprendibles $\gamma_c$ y $\gamma_s$
+7. [`07_CapsuleNet_Sin_Aumento.ipynb`](enfoque_sin_aumento_oficial/notebooks/07_CapsuleNet_Sin_Aumento.ipynb) — Red de Cápsulas con *Dynamic Routing* (3 iteraciones)
 
 ### C. Mejor Modelo Seleccionado por Validación: **EfficientNetB0 (Baseline)**
 - **Pérdida de Validación Mínima:** `val_loss = 0.1873` (menor entre los 5 modelos).

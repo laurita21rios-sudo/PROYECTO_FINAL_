@@ -38,6 +38,7 @@ En este enfoque, **no se aplicó ninguna técnica de data augmentation** (ni rot
   - `04_ConvNeXt_Tiny_Sin_Aumento.ipynb`: Comparativa con ConvNeXt-Tiny.
   - `05_CNN_Desde_Cero_Sin_Aumento.ipynb`: Línea base convolucional sin pre-entrenamiento.
   - `06_EfficientNetB0_CBAM_Residual_Sin_Aumento.ipynb`: Incorporación de CBAM Residual con escalares aprendibles $\gamma_c$ y $\gamma_s$.
+  - `07_CapsuleNet_Sin_Aumento.ipynb`: Red de Cápsulas con *Dynamic Routing* (3 iteraciones).
 - **📁 `data_splits/`:**
   - `split_sin_aumento_80_20.csv`: Censo de las 330 imágenes de desarrollo con columna de split.
   - `train_sin_aumento_80_20.csv`: 264 registros para entrenamiento.
