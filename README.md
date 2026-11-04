@@ -1,142 +1,84 @@
-# Detección Asistida de Retinopatía Diabética mediante Deep Learning
-
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
-[![TensorFlow 2.x](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
-[![Dataset IDRiD](https://img.shields.io/badge/Dataset-IDRiD-green.svg)](https://idrid.grand-challenge.org/)
-[![Clinical Grade](https://img.shields.io/badge/Clinical--Grade-Sensitivity%20100%25-red.svg)]()
-
-Repositorio de investigación enfocado en el desarrollo, optimización clínica y explicabilidad de modelos de aprendizaje profundo para el cribado (*screening*) automatizado de **Retinopatía Diabética Referible (RDR)** a partir de retinografías digitales del dataset **IDRiD** (*Indian Diabetic Retinopathy Image Dataset*).
+# 👁️ Sistema de Detección de Retinopatía Diabética Referible (RDR) y Explicabilidad Clínica (XAI)
+> **Dataset:** Indian Diabetic Retinopathy Image Dataset (IDRiD) — 413 Pacientes Únicos  
+> **Hardware:** NVIDIA GeForce RTX 4050 Laptop GPU (6.0 GB VRAM, CUDA 12.4)  
+> **Framework:** PyTorch & TensorFlow / Keras
 
 ---
 
-## 📊 Benchmark Consolidado de Modelos
+## 🗂️ Organización del Repositorio
 
-Todos los modelos fueron rigurosamente evaluados sobre las mismas **83 imágenes originales de pacientes únicos** (N = 83: 52 referibles, 31 no referibles), garantizando **cero data leakage** y eliminando réplicas sintéticas en el conjunto de prueba.
-
-| Modelo | N | Umbral ($\tau$) | Sensibilidad | Especificidad | Precisión | Accuracy | F1-Score | AUC-ROC | PR-AUC | Brier Score | Matriz Confusión (TN/FP/FN/TP) |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **ConvNeXt-Tiny (Clinical)** | 83 | $0.379$ | **1.0000** | 0.6774 | 0.8387 | 0.8795 | 0.9123 | 0.9870 | 0.9929 | 0.0627 | 21 / 10 / **0** / 52 |
-| **EfficientNetB0 (Baseline)** | 83 | $0.500$ | 0.9615 | **0.9355** | **0.9615** | **0.9518** | **0.9615** | **0.9950** | **0.9971** | **0.0378** | 29 / 2 / 2 / 50 |
-| **VGG16 (Fine-Tuned)** | 83 | $0.500$ | 0.9615 | **0.9355** | **0.9615** | **0.9518** | **0.9615** | 0.9895 | 0.9944 | — | 29 / 2 / 2 / 50 |
-| **ResNet50 (Fine-Tuning Opt)** | 83 | $0.632$ | 0.9423 | **0.9355** | 0.9608 | 0.9398 | 0.9515 | 0.9876 | 0.9931 | 0.0526 | 29 / 2 / 3 / 49 |
-| **ResNet50 (Baseline 0.5)** | 83 | $0.500$ | 0.9615 | 0.8710 | 0.9259 | 0.9277 | 0.9434 | 0.9876 | 0.9931 | 0.0526 | 27 / 4 / 2 / 50 |
-| **CapsuleNet** | 83 | $0.500$ | 0.8846 | 0.7742 | 0.8679 | 0.8434 | 0.8762 | 0.9107 | 0.9475 | 0.1229 | 24 / 7 / 6 / 46 |
-| **CNN Personalizada (Deep)** | 83 | $0.500$ | 0.8077 | 0.8387 | 0.8936 | 0.8193 | 0.8485 | 0.8958 | 0.9336 | 0.1272 | 26 / 5 / 10 / 42 |
-| **EfficientNetB0 + CBAM** | 83 | $0.500$ | 0.4038 | 0.3871 | 0.5250 | 0.3976 | 0.4565 | 0.3679 | 0.5416 | 0.2522 | 12 / 19 / 31 / 21 |
-
-> 📌 **Notas Metodológicas:**
-> 1. **Calibración y Tamizaje:** `ConvNeXt-Tiny` prioriza la seguridad clínica mediante calibración de temperatura ($T=2.1648$) y optimización de umbral ($\tau=0.379$), logrando **cero falsos negativos ($FN=0$)**.
-> 2. **EfficientNetB0 (Baseline vs. CBAM):** 
->    * El baseline de `EfficientNetB0` alcanza el **máximo AUC-ROC (0.9950)** y la mejor calibración probabilística (**Brier = 0.0378**).
->    * `EfficientNetB0 + CBAM` fue completamente inferido sobre las 83 imágenes de test para completar sus métricas (PR-AUC: 0.5416, Brier: 0.2522). Este resultado cuantitativo confirma el colapso de gradiente en la atención espacial cuando se insertan módulos sin preentrenamiento sobre transfer learning.
-> 
-> Para la discusión médica completa y el análisis de trade-offs diagnósticos, consulta [docs/discussion.md](docs/discussion.md).
-
----
-
-## 🔍 Explicabilidad y Validación Médica (Grad-CAM)
-
-En aplicaciones de salud no basta con alta precisión; el modelo debe fundamentar sus predicciones en anomalías biológicas reales. Se implementó una auditoría visual mediante mapas **Grad-CAM** (*Gradient-weighted Class Activation Mapping*):
-
-![Grad-CAM TP, TN, FP, FN](results/figures/gradcam_cnn_tp_tn_fp_fn.png)
-
-* **Verdaderos Positivos (TP):** Foco prioritario sobre microaneurismas periféricos, exudados algodonosos y exudados duros perimaculares.
-* **Verdaderos Negativos (TN):** Distribución uniforme de atención sobre el parénquima retiniano sin activación focal anómala.
-* **Auditoría de Errores (FP / FN):** Detección de posibles sesgos provocados por iluminación periférica y artefactos del lente oftalmológico.
-
----
-
-## 📁 Estructura del Repositorio
-
-La arquitectura del proyecto sigue el estándar de reproducibilidad científica:
+El proyecto se encuentra organizado de forma modular en tres grandes áreas de trabajo:
 
 ```text
 PROYECTO_FINAL/
+├── 📁 enfoque_sin_aumento_oficial/     # 🌟 ENFOQUE DEFINITIVO: Sin Data Augmentation (Imágenes puras 80/20)
+│   ├── 📁 data_splits/                 # Splits oficiales (264 train / 66 val / 83 test independientes)
+│   ├── 📁 explicabilidad_xai/          # Grad-CAM, Smooth Grad-CAM++, panel cualitativo y métricas
+│   ├── 📁 scripts/                     # Scripts de partición limpia y generación de mapas de calor
+│   └── 📄 README.md                    # Descripción metodológica y clínica
 │
-├── notebooks/                           # Entornos de experimentación y entrenamiento
-│   ├── CNN.ipynb                        # CNN personalizada con interpretabilidad Grad-CAM
-│   ├── ConvNeXt_Tiny_Clinical.ipynb     # Calibración clínica y optimización de umbral (FN=0)
-│   ├── ResNet50.ipynb                   # Fine-Tuning en 2 fases
-│   ├── EfficientNetB0.ipynb             # Modelos Baseline y análisis de atención CBAM
-│   ├── VGG16.ipynb                      # Transfer learning clásico balanceado
-│   └── CapsuleNet.ipynb                 # Redes de cápsulas para relaciones espaciales
+├── 📁 historial_con_aumento_previo/    # 📦 HISTORIAL EXPERIMENTAL: Modelos con aumento previo (x8)
+│   ├── 📁 modelos_experimentales/      # EfficientNetB0, ResNet50, ConvNeXt, VGG16, CNN, CBAM
+│   ├── 📁 data_splits_con_aumento/     # Splits previos con réplicas aumentadas (2,112 imágenes)
+│   ├── 📁 benchmarks_y_predicciones/   # Tablas comparativas con IC 95% (Bootstrap), Brier y curvas
+│   ├── 📁 scripts_anteriores/          # Pipeline de entrenamiento unificado y GPU
+│   ├── 📁 notebooks/                   # Cuadernos Jupyter reproducibles
+│   └── 📄 README.md                    # Guía de experimentos históricos
 │
-├── docs/                                # Documentación académica y discusión
-│   └── discussion.md                    # Análisis clínico, trade-offs y limitaciones
+├── 📁 documentacion_y_sustentacion/    # 📚 DEFENSAS Y SUSTENTACIÓN ACADÉMICA
+│   ├── 📄 material_apoyo_sustentacion.md # Guía para el jurado con preguntas y respuestas clínicas
+│   ├── 📄 split_sin_aumento_resumen.md # Censo y validación estadística del split 80/20
+│   ├── 📄 discussion.md                # Discusión técnica de trade-offs
+│   ├── 🖼️ comparativa_modelos_benchmark.png # Figura para diapositivas
+│   └── 📄 README.md                    # Índice documental
 │
-├── results/                             # Salidas reproducibles y consolidadas
-│   ├── figures/                         # Mapas Grad-CAM, curvas ROC y análisis de error
-│   ├── benchmark_summary.json           # Métricas cuantitativas de todos los modelos
-│   └── benchmark_summary.md             # Tabla comparativa en formato Markdown
-│
-├── scripts/                             # Automatizaciones y pipelines
-│   ├── consolidate_metrics.py           # Script consolidador de métricas clínicas
-│   ├── update_benchmark_markdown.py     # Generador automático de tablas comparativas
-│   └── rebuild_and_evaluate_cbam.py     # Inferencia directa y evaluación de modelo CBAM
-│
-├── src/                                 # Módulos transversales del proyecto
-│   ├── __init__.py
-│   └── env_setup.py                     # Selector automático multi-entorno (Local/Kaggle/Colab)
-│
-├── .gitignore                           # Exclusión de datos pesados (data/) y pesos (*.keras)
-├── pyproject.toml                       # Especificación de dependencias
-└── README.md                            # Documento ejecutivo principal
+└── 📁 data/                            # Directorio local de imágenes IDRiD (excluido de git por tamaño)
 ```
 
 ---
 
-## 🚀 Instalación y Reproducción
+## 🌟 1. Enfoque Oficial Sin Aumento de Datos (`enfoque_sin_aumento_oficial/`)
 
-### 1. Clonar el repositorio
+### A. Partición 80/20 Pura (Cero Data Leakage)
+Cada paciente aparece exactamente **una sola vez** en el estudio (cero réplicas sintéticas ni distorsiones de la anatomía ocular):
+- **Entrenamiento (Train):** 264 imágenes originales (166 Referibles / 98 No Referibles).
+- **Validación Interna (Val):** 66 imágenes originales (41 Referibles / 25 No Referibles).
+- **Prueba Independiente (Test Parte A):** 83 imágenes originales (52 Referibles / 31 No Referibles).
+- **Total:** 413 pacientes únicos.
+
+### B. Mejor Modelo Seleccionado por Validación: **EfficientNetB0 (Baseline)**
+- **Pérdida de Validación Mínima:** `val_loss = 0.1873` (menor entre los 5 modelos).
+- **Capacidad Discriminativa:** AUC-ROC = **0.9950** [IC 95%: 0.984 - 1.000], PR-AUC = **0.9971**.
+- **Desempeño en Test Ciego (N = 83):** Accuracy = **92.77%**, Sensibilidad = **92.31%**, Especificidad = **93.55%**, F1-Score = **0.9412**.
+
+### C. Explicabilidad Clínica (XAI): Grad-CAM vs. Smooth Grad-CAM++
+- **Retina Energy Ratio:** En Smooth Grad-CAM++, el **90.20%** de la atención recae estrictamente dentro de la cavidad retiniana biológica, eliminando sesgos en los bordes negros del retinógrafo.
+- **Fidelidad Causal (Drop-in-Confidence):** La confianza diagnóstica colapsa en promedio un **28.06%** (y hasta un **99.41%**) al ocluir las áreas focales patológicas identificadas.
+- **Panel Cualitativo:** 4 filas (TP, TN, FP, FN) $\times$ 5 columnas en alta resolución ubicado en [`enfoque_sin_aumento_oficial/explicabilidad_xai/gradcam_efficientnet_cualitativo.png`](enfoque_sin_aumento_oficial/explicabilidad_xai/gradcam_efficientnet_cualitativo.png).
+
+---
+
+## 📦 2. Historial de Experimentos Previos (`historial_con_aumento_previo/`)
+Conserva todos los cuadernos, modelos experimentales y métricas generadas con técnicas previas de aumentación de datos ($\times 8$), permitiendo comparar el impacto de la aumentación frente a las imágenes originales puras.
+
+---
+
+## 📚 3. Material de Sustentación (`documentacion_y_sustentacion/`)
+Diseñado para la preparación de la defensa ante el jurado calificador:
+- Respuestas sustentadas a preguntas difíciles sobre *data leakage*, calibración con Brier Score, selección de umbral clínico ($\tau = 0.50$), y justificación del split 80/20 vs 90/10.
+
+---
+
+## 🚀 Requisitos y Reproducibilidad
+
 ```bash
+# Clonar el repositorio
 git clone https://github.com/laurita21rios-sudo/PROYECTO_FINAL_.git
 cd PROYECTO_FINAL_
+
+# Sincronizar entorno virtual con uv
+uv sync
+
+# Ejecutar auditoría de interpretabilidad del enfoque oficial
+python enfoque_sin_aumento_oficial/scripts/generate_gradcam_efficientnet.py
 ```
-
-### 2. Configurar el entorno de Python
-```bash
-python -m venv .venv
-# En Windows:
-.venv\Scripts\activate
-# En Linux/Mac:
-source .venv/bin/activate
-
-pip install -r pyproject.toml
-```
-
-### 3. Descarga Automática del Dataset desde Kaggle
-El dataset base de entrenamiento y evaluación es [`mohamedabdalkader/indian-diabetic-retinopathy-image-dataset-idrid2`](https://www.kaggle.com/datasets/mohamedabdalkader/indian-diabetic-retinopathy-image-dataset-idrid2):
-
-```bash
-kaggle datasets download -d mohamedabdalkader/indian-diabetic-retinopathy-image-dataset-idrid2 -p data/IDRiD2 --unzip
-```
-
-### 4. Soporte Multi-Entorno (Local / Kaggle / Colab)
-El proyecto incluye un detector automático de entorno en [`src/env_setup.py`](src/env_setup.py). Tanto los notebooks como los scripts adaptan sus rutas de trabajo y tamaño de lote (`BATCH_SIZE`) según la plataforma:
-
-```python
-from src.env_setup import setup_environment
-
-env = setup_environment()
-print(f"Entorno detectado: {env['env']}")          # 'LOCAL', 'KAGGLE' o 'COLAB'
-print(f"Ruta de datos: {env['data_dir']}")         # Resuelve automáticamente la ruta activa
-print(f"Batch size recomendado: {env['batch_size']}")
-```
-
-### 5. Ejecutar la consolidación de métricas
-Para recalcular y actualizar automáticamente la tabla de resultados a partir de los registros de inferencia:
-
-```bash
-python scripts/consolidate_metrics.py
-```
-
----
-
-## 📑 Principales Conclusiones Clínicas
-
-1. **Estrategia Óptima de Despliegue en Salud (Cribado en 2 Fases):**
-   * **Fase 1 (Cribado masivo no invasivo):** Desplegar `ConvNeXt-Tiny` con umbral ajustado a $0.379$. Garantiza que ningún paciente enfermo quede sin atención ($FN=0$, Sensibilidad $100\%$).
-   * **Fase 2 (Confirmación diagnóstica / Triaje especializado):** Desplegar `EfficientNetB0` o `ResNet50` (umbral $0.632$) para maximizar precisión y especificidad ($93.55\%$), minimizando las sobrederivaciones y costos al sistema de salud.
-2. **Importancia de la Explicabilidad:** La validación con mapas Grad-CAM confirmó que la red aprende características anatomopatológicas genuinas (microaneurismas, exudados) y no artefactos del retinógrafo.
-
-Para más detalles, consulta el documento completo de discusión en [docs/discussion.md](docs/discussion.md).
