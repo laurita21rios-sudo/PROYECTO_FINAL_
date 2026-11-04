@@ -1,5 +1,5 @@
 # 👁️ Sistema de Detección de Retinopatía Diabética Referible (RDR) y Explicabilidad Clínica (XAI)
-> **Dataset:** Indian Diabetic Retinopathy Image Dataset (IDRiD) — 413 Pacientes Únicos  
+> **Dataset Completo IDRiD:** **516 Pacientes Únicos Originales** (*4,128 archivos totales en disco incluyendo las $\times 8$ réplicas descartadas*: $3,304$ en `train/` $\rightarrow$ $413$ originales, y $824$ en `test/` $\rightarrow$ $103$ originales).  
 > **Enfoque Metodológico:** Estrictamente **Sin Aumento de Datos** (*Zero Data Augmentation*) — Imágenes originales puras con Split Agrupado y Estratificado 80/20.  
 > **Hardware:** NVIDIA GeForce RTX 4050 Laptop GPU (6.0 GB VRAM, CUDA 12.4)  
 > **Framework:** TensorFlow / Keras & PyTorch
@@ -34,12 +34,17 @@ PROYECTO_FINAL/
 
 ## 🌟 1. Enfoque Oficial Sin Aumento de Datos (`enfoque_sin_aumento_oficial/`)
 
-### A. Partición 80/20 Pura (Cero Data Leakage y Cero Aumento)
-Cada paciente aparece exactamente **una sola vez** en el estudio (cero réplicas sintéticas ni distorsiones de la anatomía ocular):
-- **Entrenamiento (Train):** 264 imágenes originales (166 Referibles / 98 No Referibles).
-- **Validación Interna (Val):** 66 imágenes originales (41 Referibles / 25 No Referibles).
-- **Prueba Independiente (Test Parte A):** 83 imágenes originales (52 Referibles / 31 No Referibles).
-- **Total:** 413 pacientes únicos.
+### A. Censo Completo del Dataset IDRiD (516 Originales / 4,128 en Disco) y Partición 80/20 Pura
+En el almacenamiento físico (`data/IDRiD2/IDRiD/`) existen **4,128 archivos** porque cada imagen original tenía 7 réplicas sintéticas ($\times 8$). Al filtrar estrictamente las **imágenes originales puras (`is_original = True`)**, el censo exacto del dataset es:
+
+| Subconjunto / Carpeta Origen | Archivos en Disco ($\times 8$) | **Imágenes Originales (Sin Aumento)** | No Referible (0) | Referible (1) | Rol en el Proyecto |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Train (80% de las 330 de Desarrollo)** | $2,112$ | **264 originales** | 98 (37.1%) | 166 (62.9%) | Entrenamiento de los 7 modelos |
+| **Validación (20% de las 330 de Desarrollo)** | $528$ | **66 originales** | 25 (37.9%) | 41 (62.1%) | Early Stopping (`val_loss`) y elección de modelo |
+| **Test Parte A (Resto de carpeta `train/`)** | $664$ | **83 originales** | 31 (37.3%) | 52 (62.7%) | Evaluación ciega principal (IC 95%, DeLong, McNemar, XAI) |
+| *Subtotal Carpeta `train/` (`IDRiD_001`–`413`)* | *$3,304$* | ***413 originales*** | *154 (37.3%)* | *259 (62.7%)* | *Censo `dataset_completo_original_413.csv`* |
+| **Test Oficial Externo (Carpeta `test/`)** | $824$ | **103 originales** | 39 (37.9%) | 64 (62.1%) | Validación externa (`test_oficial_103_sin_aumento.csv`) |
+| **TOTAL GLOBAL DATASET IDRiD** | **$4,128$** | **516 originales** | **193 (37.4%)** | **323 (62.6%)** | **Censo total `dataset_completo_original_516.csv`** |
 
 ### B. Cuadernos Jupyter Reproducibles (`enfoque_sin_aumento_oficial/notebooks/`)
 1. [`01_EfficientNetB0_Sin_Aumento.ipynb`](enfoque_sin_aumento_oficial/notebooks/01_EfficientNetB0_Sin_Aumento.ipynb) — **Modelo Ganador Base**

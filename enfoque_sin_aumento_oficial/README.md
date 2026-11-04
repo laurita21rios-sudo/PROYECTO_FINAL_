@@ -18,14 +18,16 @@ En este enfoque, **no se aplicó ninguna técnica de data augmentation** (ni rot
 
 ---
 
-## 2. Partición Oficial del Dataset (Split 80/20 Puro)
+## 2. Censo Completo del Dataset IDRiD (516 Originales / 4,128 en Disco) y Partición Oficial (80/20)
 
-| Subconjunto | N° Pacientes Únicos | No Referible (0) | Referible (1) | Grado 0 | Grado 1 | Grado 2 | Grado 3 | Grado 4 |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Entrenamiento (Train)** | **264** | 98 (37.1%) | 166 (62.9%) | 89 | 9 | 90 | 46 | 30 |
-| **Validación Interna (Val)** | **66** | 25 (37.9%) | 41 (62.1%) | 22 | 3 | 22 | 12 | 7 |
-| **Prueba Independiente (Test Parte A)** | **83** | 31 (37.3%) | 52 (62.7%) | 23 | 8 | 24 | 16 | 12 |
-| **Total Estudio Clínico** | **413** | **154 (37.3%)** | **259 (62.7%)** | **134** | **20** | **136** | **74** | **49** |
+| Subconjunto | Archivos en Disco ($\times 8$) | **N° Pacientes Únicos (Sin Aumento)** | No Referible (0) | Referible (1) | Grado 0 | Grado 1 | Grado 2 | Grado 3 | Grado 4 |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Entrenamiento (Train 80% de 330)** | 2,112 | **264** | 98 (37.1%) | 166 (62.9%) | 89 | 9 | 90 | 46 | 30 |
+| **Validación Interna (Val 20% de 330)** | 528 | **66** | 25 (37.9%) | 41 (62.1%) | 22 | 3 | 22 | 12 | 7 |
+| **Prueba Independiente (Test Parte A)** | 664 | **83** | 31 (37.3%) | 52 (62.7%) | 23 | 8 | 24 | 16 | 12 |
+| *Subtotal Carpeta `train/` (`IDRiD_001`–`413`)* | *3,304* | ***413*** | *154 (37.3%)* | *259 (62.7%)* | *134* | *20* | *136* | *74* | *49* |
+| **Test Oficial Externo (Carpeta `test/`)** | 824 | **103** | 39 (37.9%) | 64 (62.1%) | 34 | 5 | 32 | 19 | 13 |
+| **TOTAL GLOBAL DATASET IDRiD** | **4,128** | **516** | **193 (37.4%)** | **323 (62.6%)** | **168** | **25** | **168** | **93** | **62** |
 
 ---
 
