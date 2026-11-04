@@ -27,6 +27,7 @@ PROYECTO_FINAL/
 │   ├── 🖼️ comparativa_modelos_benchmark.png # Figura comparativa para diapositivas
 │   └── 📄 README.md                    # Índice documental
 │
+├── 📄 resumen.md                       # 📊 RESUMEN EJECUTIVO: Casos de evaluación, Auto-Test y comparativa Con vs Sin Aumento
 └── 📁 data/                            # Directorio local de imágenes IDRiD (excluido de git por tamaño)
 ```
 
