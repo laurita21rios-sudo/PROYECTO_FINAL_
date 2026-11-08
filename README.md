@@ -20,6 +20,7 @@ PROYECTO_FINAL/
 │   └── 📄 README.md                    # Descripción metodológica y clínica
 │
 ├── 📁 documentacion_y_sustentacion/    # 📚 DEFENSA Y SUSTENTACIÓN ACADÉMICA (7 PASOS)
+│   ├── 📄 metodologia_proyecto.md      # 🔬 Metodología completa paso a paso (Fases 1 a 7 + Diagrama)
 │   ├── 📄 informe_completo_7_pasos.md  # Informe integral con los 7 puntos de evaluación
 │   ├── 📄 material_apoyo_sustentacion.md # Guía para el jurado con preguntas y respuestas clínicas
 │   ├── 📄 split_sin_aumento_resumen.md # Censo y validación estadística del split 80/20
